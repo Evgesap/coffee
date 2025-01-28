@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня</title>
+    <link rel="stylesheet" href="/Кофейня/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header__coffee-house">
+        <h1 class="title__coffee-house">COFFEE HOUSE</h1>
+    </header>
+    <main>
+        <div class="container__coffee-house">
+            <div class="user-info__coffee-house">
+                <input class="info__coffee-house" type="text" name="surname" placeholder="Введите Фамилию">
+                <input class="info__coffee-house" type="text" name="name" placeholder="Введите Имя">
+            </div>
+            <div class="goods__coffee-house">
+                <div class="goods-items-coffee__coffee-house">
+                    <div class="goods-items__coffee-house">
+                        <input class="checkbox__coffee-house" type="checkbox" id="goodsChoice1" name="goods"
+                            value="expresso" data-price="80">
+                        <label for="goodsChoice1">Эспресо 80р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0" data-name="expresso">
+                    </div>
+                    <div class="goods-items__coffee-house">
+                        <input class="checkbox__coffee-house" type="checkbox" id="goodsChoice2" name="goods"
+                            value="latte" data-price="110">
+                        <label for="goodsChoice2">Латте 110р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0" data-name="latte">
+                    </div>
+                    <div class="goods-items__coffee-house">
+                        <input class="checkbox__coffee-house" type="checkbox" id="goodsChoice3" name="goods"
+                            value="cappuccino" data-price="120">
+                        <label for="goodsChoice3">Капучино 120р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0" data-name="cappuccino">
+                    </div>
+                    <div class="goods-items__coffee-house coffee">
+                        <input class="checkbox__coffee-house" type="checkbox" id="goodsChoice4" name="goods"
+                            value="americano" data-price="90">
+                        <label for="goodsChoice4">Американо 90р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0" data-name="americano">
+                    </div>
+                </div>
+                <div class="goods-items-cakes__coffee-house">
+                    <div class="goods-items__coffee-house">
+                        <input class=" checkbox__coffee-house" type="checkbox" id="goodsChoice5" name="goods"
+                            value="Chocolate_cupcake" data-price="80">
+                        <label for="goodsChoice5">Шоколадный кекс 80р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0"
+                            data-name="Chocolate_cupcake">
+                    </div>
+                    <div class="goods-items__coffee-house">
+                        <input class="checkbox__coffee-house" type="checkbox" id="goodsChoice6" name="goods"
+                            value="Blueberry_muffin" data-price="90">
+                        <label for="goodsChoice6">Черничный кекс 90р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0"
+                            data-name="Blueberry_muffin">
+                    </div>
+                    <div class="goods-items__coffee-house">
+                        <input class="checkbox__coffee-house" type="checkbox" id="goodsChoice7" name="goods"
+                            value="Apple_tart" data-prise="100">
+                        <label for="goodsChoice7">Яблочный тарт 100р.</label>
+                        <input class="number__coffee-house" type="number" name="numb" value="0" data-name="Apple_tart">
+                    </div>
+                </div>
+            </div>
+            <p class="total-price__coffee-house">Итого: <span class="sum__coffee-house"> 0</span> р.</p>
+            <div class="submit__coffee-house">
+                <button class="btn__coffee-house">Оформить заказ</button>
+            </div>
+        </div>
+    </main>
+    <script src="/Кофейня/script/main.js"></script>
+</body>
+
+</html>

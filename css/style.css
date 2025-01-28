@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header__coffee-house {
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.title__coffee-house {
+  padding: 29px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* main */
+
+.container__coffee-house {
+  width: 100%;
+  height: 680px;
+  background: rgb(129, 112, 112);
+  font-family: Oswald;
+}
+
+.user-info__coffee-house {
+  display: flex;
+  justify-content: center;
+  padding: 86px;
+}
+
+.info__coffee-house {
+  width: 300px;
+  height: 55px;
+  border: 3px solid rgb(255, 255, 255);
+  background: rgb(129, 112, 112);
+  color: rgb(255, 255, 255);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  outline: none;
+  margin: 0 10px 10px 10px;
+}
+
+::placeholder {
+  background: rgb(129, 112, 112);
+  color: rgb(255, 255, 255);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.goods__coffee-house {
+  display: flex;
+  justify-content: center;
+  gap: 132px;
+}
+
+.goods-items__coffee-house {
+  display: flex;
+  height: 55px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.checkbox__coffee-house {
+  width: 21px;
+  height: 23px;
+  background: rgb(196, 196, 196);
+  accent-color: rgb(129, 112, 112);
+  margin-right: 13.5px;
+}
+
+.goods-items-coffee__coffee-house label {
+  display: inline-block;
+  width: 120px;
+  margin-right: 14px;
+  color: rgb(255, 255, 255);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.number__coffee-house {
+  width: 130px;
+  height: 55px;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  background: rgb(129, 112, 112);
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.goods-items-cakes__coffee-house label {
+  display: inline-block;
+  width: 175px;
+  margin-right: 18px;
+  font-family: Oswald;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.total-price__coffee-house {
+  color: rgb(255, 255, 255);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.sum__coffee-house {
+  color: rgb(255, 255, 255);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.submit__coffee-house {
+  display: flex;
+}
+
+.btn__coffee-house {
+  margin: 0 auto;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(129, 112, 112);
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn__coffee-house:hover {
+  color: #fff;
+  background: #817070;
+}
