@@ -1,13 +1,14 @@
 "use strict";
 
-/* order */
-
 const checkboxBtn = document.querySelectorAll('[name="goods"]');
-const goods = document.querySelectorAll(".goods-items__coffee-house");
+const inputValue = document.querySelectorAll('[name="numb"]');
+const ORDER_KEY = "ORDER_KEY";
 let goodsData = [];
 
+/* choise goods */
+
 checkboxBtn.forEach((checkbox, index) => {
-  checkbox.addEventListener("change", function () {
+  checkbox.addEventListener("change", () => {
     const choiceQuantity = document.querySelector(
       `[data-name="${checkbox.value}"]`
     );
@@ -23,17 +24,26 @@ checkboxBtn.forEach((checkbox, index) => {
       goodsData.splice(goodsData.indexOf(goodsData[index]), 1);
       return (choiceQuantity.value = parseInt(0));
     }
-
-    console.log(goodsData);
   });
 });
+
+inputValue.forEach((input, index) => {
+  input.addEventListener("input", () => {
+    if (input.value === 1) {
+      goodsData[index].quantity = input.value;
+    } else {
+      return (goodsData[index].quantity = input.value);
+    }
+  });
+});
+
+console.log(goodsData);
 
 /* result sum */
 
 const getResultSum = () => {};
 
 /* order data */
-
 const userData = {};
 
 const userSurname = document.querySelector('[name="surname"]');
