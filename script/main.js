@@ -2,9 +2,8 @@
 
 /* order */
 
-const goods = document.querySelectorAll(".goods-items__coffee-house");
 const checkboxBtn = document.querySelectorAll('[name="goods"]');
-
+const goods = document.querySelectorAll(".goods-items__coffee-house");
 let goodsData = [];
 
 checkboxBtn.forEach((checkbox, index) => {
@@ -14,7 +13,7 @@ checkboxBtn.forEach((checkbox, index) => {
     );
 
     if (checkbox.checked) {
-      choiceQuantity.setAttribute("value", 1);
+      choiceQuantity.value = parseInt(1);
       goodsData.push({
         name: checkbox.value,
         price: checkbox.dataset.price,
@@ -22,7 +21,7 @@ checkboxBtn.forEach((checkbox, index) => {
       });
     } else {
       goodsData.splice(goodsData.indexOf(goodsData[index]), 1);
-      choiceQuantity.setAttribute("value", 0);
+      return (choiceQuantity.value = parseInt(0));
     }
 
     console.log(goodsData);
